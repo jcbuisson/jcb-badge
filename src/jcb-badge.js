@@ -1,5 +1,4 @@
 import { LitElement, css, html } from 'lit'
-import litLogo from './assets/lit.svg'
 
 /**
  * An example element.
@@ -8,124 +7,62 @@ import litLogo from './assets/lit.svg'
  * @csspart button - The button
  */
 export class Badge extends LitElement {
-  
-  static get properties() {
-    return {
-      /**
-       * Copy for the read the docs hint.
-       */
-      docsHint: { type: String },
 
-      /**
-       * The number of times the button has been clicked.
-       */
-      count: { type: Number },
-    }
-  }
+   static get properties() {
+      return {
+         /**
+          * The number of times the button has been clicked.
+          */
+         count: { type: Number },
+         class: {type: String},
+         style: {type: String},
+      }
+   }
 
-  constructor() {
-    super()
-    this.docsHint = 'Click on the Vite and Lit logos to learn more'
-    this.count = 0
-  }
+   constructor() {
+      super()
+      this.count = 0
+   }
 
-  render() {
-    return html`
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src="/vite.svg" class="logo" alt="Vite logo" />
-        </a>
-        <a href="https://lit.dev" target="_blank">
-          <img src=${litLogo} class="logo lit" alt="Lit logo" />
-        </a>
-      </div>
-      <slot></slot>
-      <div class="card">
-        <button @click=${this._onClick} part="button">
-          count is ${this.count}
-        </button>
-      </div>
-      <p class="read-the-docs">${this.docsHint}</p>
-    `
-  }
+   render0() {
+      return html`
+         <svg width="113" height="113" viewBox="0 0 113 113" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <!-- badge holder -->
+            <path d="M53.4027 3.79008C55.0032 1.83162 57.9968 1.83162 59.5973 3.79009L63.4525 8.50755C64.664 9.99003 66.7561 10.4062 68.4427 9.50017L73.8097 6.6171C76.0378 5.42019 78.8036 6.56581 79.5327 8.98768L81.2892 14.8214C81.8411 16.6546 83.6147 17.8397 85.5197 17.6481L91.5814 17.0383C94.098 16.7852 96.2148 18.902 95.9617 21.4186L95.3519 27.4804C95.1603 29.3853 96.3454 31.1589 98.1786 31.7108L104.012 33.4673C106.434 34.1964 107.58 36.9622 106.383 39.1903L103.5 44.5573C102.594 46.2439 103.01 48.336 104.492 49.5475L109.21 53.4027C111.168 55.0032 111.168 57.9968 109.21 59.5973L104.492 63.4525C103.01 64.664 102.594 66.7561 103.5 68.4427L106.383 73.8097C107.58 76.0378 106.434 78.8036 104.012 79.5327L98.1786 81.2892C96.3454 81.8411 95.1603 83.6147 95.3519 85.5197L95.9617 91.5814C96.2148 94.098 94.098 96.2148 91.5814 95.9617L85.5197 95.3519C83.6147 95.1603 81.8411 96.3454 81.2892 98.1786L79.5327 104.012C78.8036 106.434 76.0378 107.58 73.8097 106.383L68.4427 103.5C66.7561 102.594 64.664 103.01 63.4525 104.492L59.5973 109.21C57.9968 111.168 55.0032 111.168 53.4027 109.21L49.5475 104.492C48.336 103.01 46.2439 102.594 44.5573 103.5L39.1903 106.383C36.9622 107.58 34.1964 106.434 33.4673 104.012L31.7108 98.1786C31.1589 96.3454 29.3853 95.1603 27.4804 95.3519L21.4186 95.9617C18.902 96.2148 16.7852 94.098 17.0383 91.5814L17.6481 85.5196C17.8397 83.6147 16.6546 81.8411 14.8214 81.2892L8.98767 79.5327C6.56581 78.8036 5.4202 76.0378 6.61711 73.8097L9.50017 68.4427C10.4062 66.7561 9.99003 64.664 8.50755 63.4525L3.79008 59.5973C1.83162 57.9968 1.83162 55.0032 3.79009 53.4027L8.50755 49.5475C9.99003 48.336 10.4062 46.2439 9.50017 44.5573L6.6171 39.1903C5.42019 36.9622 6.56581 34.1964 8.98768 33.4673L14.8214 31.7108C16.6546 31.1589 17.8397 29.3853 17.6481 27.4804L17.0383 21.4186C16.7852 18.902 18.902 16.7852 21.4186 17.0383L27.4804 17.6481C29.3853 17.8397 31.1589 16.6546 31.7108 14.8214L33.4673 8.98767C34.1964 6.56581 36.9622 5.4202 39.1903 6.61711L44.5573 9.50017C46.2439 10.4062 48.336 9.99003 49.5475 8.50755L53.4027 3.79008Z" fill="#FEAC4C"/>
 
-  _onClick() {
-    this.count++
-  }
+            <!-- 7 -->
+            <path d="M35.8566 57.9272L48.9096 35.2792H34.3176V31.3272H53.4886V35.2792L40.3976 57.9272H35.8566Z" fill="black"/>
 
-  static get styles() {
-    return css`
-      :host {
-        max-width: 1280px;
-        margin: 0 auto;
-        padding: 2rem;
-        text-align: center;
-      }
+            <!-- 10 -->
+            <path d="M64.533 87.3212V70.0372H62.1115L62.938 67.0212H67.549V87.3212H64.533ZM78.6159 87.6982C77.4173 87.6982 76.3346 87.4276 75.3679 86.8862C74.4109 86.3352 73.5844 85.5764 72.8884 84.6097C72.1924 83.6431 71.6608 82.5266 71.2934 81.2602C70.9261 79.9842 70.7424 78.6212 70.7424 77.1712C70.7424 75.7212 70.9261 74.3582 71.2934 73.0822C71.6608 71.8062 72.1924 70.6897 72.8884 69.7327C73.5844 68.7661 74.4109 68.0121 75.3679 67.4707C76.3346 66.9197 77.4173 66.6442 78.6159 66.6442C79.7953 66.6442 80.8683 66.9197 81.8349 67.4707C82.8016 68.0121 83.6233 68.7661 84.2999 69.7327C84.9863 70.6897 85.5131 71.8062 85.8804 73.0822C86.2478 74.3582 86.4314 75.7212 86.4314 77.1712C86.4314 78.6212 86.2478 79.9842 85.8804 81.2602C85.5131 82.5266 84.9863 83.6431 84.2999 84.6097C83.6233 85.5764 82.8016 86.3352 81.8349 86.8862C80.8683 87.4276 79.7953 87.6982 78.6159 87.6982ZM78.6159 84.6822C79.7276 84.6822 80.6508 84.3342 81.3854 83.6382C82.1298 82.9326 82.6856 82.0094 83.0529 80.8687C83.4203 79.7281 83.6039 78.4956 83.6039 77.1712C83.6039 75.7792 83.4106 74.5177 83.0239 73.3867C82.6469 72.2461 82.0863 71.3422 81.3419 70.6752C80.6073 69.9986 79.6986 69.6602 78.6159 69.6602C77.7556 69.6602 77.0064 69.8632 76.3684 70.2692C75.7401 70.6752 75.2181 71.2311 74.8024 71.9367C74.3964 72.6424 74.0871 73.4447 73.8744 74.3437C73.6714 75.2427 73.5699 76.1852 73.5699 77.1712C73.5699 78.4956 73.7584 79.7281 74.1354 80.8687C74.5124 82.0094 75.0731 82.9326 75.8174 83.6382C76.5714 84.3342 77.5043 84.6822 78.6159 84.6822Z" fill="black"/>
 
-      .logo {
-        height: 6em;
-        padding: 1.5em;
-        will-change: filter;
-        transition: filter 300ms;
-      }
-      .logo:hover {
-        filter: drop-shadow(0 0 2em #646cffaa);
-      }
-      .logo.lit:hover {
-        filter: drop-shadow(0 0 2em #325cffaa);
-      }
+            <!-- fraction line -->
+            <line x1="82.1818" y1="31.6143" x2="30.9295" y2="82.8667" stroke="white" stroke-width="5" stroke-linecap="round"/>
+         </svg>
+      `
+   }
 
-      .card {
-        padding: 2em;
-      }
+   render() {
+      return html`
+         <p>ABCD</p>
+      `
+   }
 
-      .read-the-docs {
-        color: #888;
-      }
+   updated() {
+      console.log('updated')
+   }
 
-      a {
-        font-weight: 500;
-        color: #646cff;
-        text-decoration: inherit;
-      }
-      a:hover {
-        color: #535bf2;
-      }
-
-      h1 {
-        font-size: 3.2em;
-        line-height: 1.1;
-      }
-
-      button {
-        border-radius: 8px;
-        border: 1px solid transparent;
-        padding: 0.6em 1.2em;
-        font-size: 1em;
-        font-weight: 500;
-        font-family: inherit;
-        background-color: #1a1a1a;
-        cursor: pointer;
-        transition: border-color 0.25s;
-      }
-      button:hover {
-        border-color: #646cff;
-      }
-      button:focus,
-      button:focus-visible {
-        outline: 4px auto -webkit-focus-ring-color;
-      }
-
-      @media (prefers-color-scheme: light) {
-        a:hover {
-          color: #747bff;
-        }
-        button {
-          background-color: #f9f9f9;
-        }
-      }
-    `
-  }
+   static get styles() {
+      return css`
+         /* :host selects the host element (<jcb-badge>, not its shadow dom) */
+         :host {
+            background-color: red;
+            display: inline-block; /* by default a CE is inline and width & height do not apply */
+            width: 30%;
+            height: 30%;
+         }
+      `
+   }
 }
 
 window.customElements.define('jcb-badge', Badge)
