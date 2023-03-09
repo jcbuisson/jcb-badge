@@ -1,11 +1,11 @@
 {
-  "name": "vite-lit-starter",
+  "name": "jcb-badge",
   "private": true,
-  "version": "0.0.0",
+  "version": "2.0.0",
   "type": "module",
-  "main": "dist/my-element.es.js",
+  "main": "dist/jcb-badge.js",
   "exports": {
-    ".": "./dist/my-element.es.js"
+    ".": "./dist/jcb-badge.js"
   },
   "files": [
     "dist"
@@ -15,6 +15,7 @@
     "build": "vite build"
   },
   "dependencies": {
+    "jsdoc": "^4.0.2",
     "lit": "^2.6.1"
   },
   "devDependencies": {

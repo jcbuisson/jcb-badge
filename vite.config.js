@@ -4,7 +4,7 @@ import { defineConfig } from 'vite'
 export default defineConfig({
   build: {
     lib: {
-      entry: 'src/my-element.js',
+      entry: 'src/jcb-badge.js',
       formats: ['es'],
     },
     rollupOptions: {

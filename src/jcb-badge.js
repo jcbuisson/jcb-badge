@@ -7,7 +7,8 @@ import litLogo from './assets/lit.svg'
  * @slot - This element has a slot
  * @csspart button - The button
  */
-export class MyElement extends LitElement {
+export class Badge extends LitElement {
+  
   static get properties() {
     return {
       /**
@@ -127,4 +128,4 @@ export class MyElement extends LitElement {
   }
 }
 
-window.customElements.define('my-element', MyElement)
+window.customElements.define('jcb-badge', Badge)
