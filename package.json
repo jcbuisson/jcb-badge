@@ -15,7 +15,6 @@
     "build": "vite build"
   },
   "dependencies": {
-    "jsdoc": "^4.0.2",
     "lit": "^2.6.1"
   },
   "devDependencies": {
