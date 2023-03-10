@@ -1,7 +1,7 @@
 import { LitElement, css, html } from 'lit'
 
 /**
-   * A badge which displays a mark as a fraction
+   * A custom-element which displays a badge containing a mark as a fraction
    * @attr {String} numerator - The text to display on the upper part of the fraction
    * @attr {String} denominator - The text to display on the lower part of the fraction
    * @cssprop --jcb-badge-text-color - Controls the color of the mark text (default: black)

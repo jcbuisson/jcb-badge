@@ -1,7 +1,7 @@
 
 # jcb-badge
 
-A badge which displays a mark as a fraction
+A custom-element which displays a badge containing a mark as a fraction
 
 ## Properties
 

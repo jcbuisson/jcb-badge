@@ -1,6 +1,5 @@
 {
   "name": "jcb-badge",
-  "private": true,
   "version": "2.0.0",
   "type": "module",
   "main": "dist/jcb-badge.js",
