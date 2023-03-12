@@ -3,7 +3,7 @@
 
 A custom-element which displays a badge containing a mark as a fraction
 
-<img src="https://jcbuisson.github.io/assets/badge.png" width="500" />
+<img src="https://jcbuisson.github.io/assets/badge.png" width="300" />
 
 ## Properties
 
